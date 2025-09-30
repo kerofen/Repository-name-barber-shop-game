@@ -1,0 +1,107 @@
+{
+  "screenSize": {
+    "width": {
+      "value": 768,
+      "type": "number",
+      "description": "Screen width for portrait mode"
+    },
+    "height": {
+      "value": 1152,
+      "type": "number",
+      "description": "Screen height for portrait mode"
+    }
+  },
+  "debugConfig": {
+    "debug": {
+      "value": false,
+      "type": "boolean",
+      "description": "Enable debug mode"
+    }
+  },
+  "renderConfig": {
+    "pixelArt": {
+      "value": true,
+      "type": "boolean",
+      "description": "Whether to enable pixel art rendering"
+    }
+  },
+  "gameConfig": {
+    "gameDuration": {
+      "value": 60,
+      "type": "number",
+      "description": "Game duration in seconds"
+    },
+    "movementSpeed": {
+      "value": 400,
+      "type": "number",
+      "description": "Player movement speed in pixels per second"
+    },
+    "maxHP": {
+      "value": 100,
+      "type": "number",
+      "description": "Player maximum HP"
+    },
+    "scissorsDamage": {
+      "value": 10,
+      "type": "number",
+      "description": "Damage dealt by scissors"
+    },
+    "clipperDamage": {
+      "value": 30,
+      "type": "number",
+      "description": "Damage dealt by clippers"
+    },
+    "invulnerabilityTime": {
+      "value": 500,
+      "type": "number",
+      "description": "Invulnerability time after taking damage in milliseconds"
+    }
+  },
+  "attackPatterns": {
+    "scissors1StartTime": {
+      "value": 0,
+      "type": "number",
+      "description": "Start time for scissors1 attack pattern"
+    },
+    "scissors1InitialRate": {
+      "value": 333,
+      "type": "number",
+      "description": "Initial interval for scissors1 (milliseconds between attacks)"
+    },
+    "scissors1FinalRate": {
+      "value": 167,
+      "type": "number",
+      "description": "Final interval for scissors1 (milliseconds between attacks)"
+    },
+    "clipper1StartTime": {
+      "value": 20,
+      "type": "number",
+      "description": "Start time for clipper1 attack pattern"
+    },
+    "clipper1Rate": {
+      "value": 2000,
+      "type": "number",
+      "description": "Interval for clipper1 attacks in milliseconds"
+    },
+    "clipper2StartTime": {
+      "value": 30,
+      "type": "number",
+      "description": "Start time for clipper2 attack pattern"
+    },
+    "clipper2Rate": {
+      "value": 2000,
+      "type": "number",
+      "description": "Interval for clipper2 attacks in milliseconds"
+    },
+    "scissors2StartTime": {
+      "value": 40,
+      "type": "number",
+      "description": "Start time for scissors2 attack pattern"
+    },
+    "scissors2Rate": {
+      "value": 167,
+      "type": "number",
+      "description": "Interval for scissors2 attacks in milliseconds"
+    }
+  }
+}
