@@ -1,0 +1,197 @@
+{
+  "fonts": {
+    "files": [
+      {
+        "url": "assets/fronts/retro-pixel-arcade.otf.woff2",
+        "type": "font",
+        "key": "RetroPixel",
+        "fontType": "opentype"
+      },
+      {
+        "url": "assets/fronts/supercell-magic_0.ttf",
+        "type": "font",
+        "key": "SupercellMagic",
+        "fontType": "opentype"
+      }
+    ]
+  },
+  "backgrounds": {
+    "files": [
+      {
+        "type": "image",
+        "key": "background",
+        "url": "https://cdn-game-mcp.gambo.ai/516f0201-4d7f-4224-b3bc-9e4e4a9d4b7f/uploads/516f0201-4d7f-4224-b3bc-9e4e4a9d4b7f.png"
+      }
+    ]
+  },
+  "characters": {
+    "files": [
+      {
+        "type": "image",
+        "key": "barber_character",
+        "url": "https://cdn-game-mcp.gambo.ai/c75bda9b-a93a-4730-9685-91b9fafe42fe/uploads/c75bda9b-a93a-4730-9685-91b9fafe42fe.png"
+      },
+      {
+        "type": "image",
+        "key": "kerofen_character",
+        "url": "https://cdn-game-mcp.gambo.ai/e3c82e72-e9fc-4ee0-9ff6-72630065fd60/uploads/e3c82e72-e9fc-4ee0-9ff6-72630065fd60.png"
+      },
+      {
+        "type": "image",
+        "key": "kerofen_100hp",
+        "url": "assets/kerofen_100hp.png"
+      },
+      {
+        "type": "image",
+        "key": "kerofen_50hp",
+        "url": "assets/kerofen_50hp.png"
+      },
+      {
+        "type": "image",
+        "key": "kerofen_clear",
+        "url": "https://cdn-game-mcp.gambo.ai/ac0558bf-81b5-4e7e-9f5e-a9d7068fc3ee/uploads/ac0558bf-81b5-4e7e-9f5e-a9d7068fc3ee.png"
+      },
+      {
+        "type": "image",
+        "key": "kerofen_lose",
+        "url": "https://cdn-game-mcp.gambo.ai/32482df4-eb4e-4fce-bdba-768f2307712f/uploads/32482df4-eb4e-4fce-bdba-768f2307712f.png"
+      }
+    ]
+  },
+  "enemies": {
+    "files": [
+      {
+        "type": "image",
+        "key": "scissors1_enemy",
+        "url": "https://cdn-game-mcp.gambo.ai/bf85666b-6c7a-4932-9041-2bb29104d6d6/uploads/bf85666b-6c7a-4932-9041-2bb29104d6d6.png"
+      },
+      {
+        "type": "image",
+        "key": "scissors2_enemy",
+        "url": "https://cdn-game-mcp.gambo.ai/cbf6e617-f547-4753-ba58-ecb654edd99f/uploads/cbf6e617-f547-4753-ba58-ecb654edd99f.png"
+      },
+      {
+        "type": "image",
+        "key": "clipper1_enemy",
+        "url": "https://cdn-game-mcp.gambo.ai/36b85794-f294-474d-9188-2ee42600b15c/images/clipper1_enemy.png"
+      },
+      {
+        "type": "image",
+        "key": "clipper2_enemy",
+        "url": "https://cdn-game-mcp.gambo.ai/95385d56-a1b2-4709-ab2b-60d2b69476c1/images/clipper2_enemy.png"
+      }
+    ]
+  },
+  "ui_images": {
+    "files": [
+      {
+        "type": "image",
+        "key": "game_logo",
+        "url": "https://cdn-game-mcp.gambo.ai/827df594-465c-4490-a1d2-1790e4dfe1a8/uploads/827df594-465c-4490-a1d2-1790e4dfe1a8.png"
+      },
+      {
+        "type": "image",
+        "key": "hp_bar_frame",
+        "url": "https://cdn-game-mcp.gambo.ai/2f2633e2-d407-4dc0-88fc-83baca73ee49/uploads/2f2633e2-d407-4dc0-88fc-83baca73ee49.png"
+      },
+      {
+        "type": "image",
+        "key": "start_button",
+        "url": "https://cdn-game-mcp.gambo.ai/41cb2f82-51ba-43a8-a4c2-dbdbf88bafe6/uploads/41cb2f82-51ba-43a8-a4c2-dbdbf88bafe6.png"
+      },
+      {
+        "type": "image",
+        "key": "retry_button",
+        "url": "https://cdn-game-mcp.gambo.ai/b78ff2b2-ddfc-4762-b484-a91d25eb67b4/uploads/b78ff2b2-ddfc-4762-b484-a91d25eb67b4.png"
+      },
+      {
+        "type": "image",
+        "key": "next_button",
+        "url": "https://cdn-game-mcp.gambo.ai/c2d8adee-1864-4b31-941b-539d53052c16/uploads/c2d8adee-1864-4b31-941b-539d53052c16.png"
+      },
+      {
+        "type": "image",
+        "key": "speech_bubble",
+        "url": "https://cdn-game-mcp.gambo.ai/fb356fb2-ed4e-4b7b-8725-13e63f9405cd/images/speech_bubble.png"
+      },
+      {
+        "type": "image",
+        "key": "speech_bubble_fixed",
+        "url": "https://cdn-game-mcp.gambo.ai/9c09d3ef-d9d5-4fcb-87c0-a4cab4370985/images/speech_bubble_fixed.png"
+      },
+      {
+        "type": "image",
+        "key": "speech_bubble_horizontal",
+        "url": "https://cdn-game-mcp.gambo.ai/6eec1843-fb0a-4552-a95c-a6da6787c940/images/speech_bubble_horizontal.png"
+      },
+      {
+        "type": "image",
+        "key": "speech_bubble_horizontal_right",
+        "url": "https://cdn-game-mcp.gambo.ai/b656efda-7f06-4d6d-8a6e-2193cffb80e0/images/speech_bubble_horizontal_right.png"
+      },
+      {
+        "type": "image",
+        "key": "speech_bubble_horizontal_right_fixed",
+        "url": "https://cdn-game-mcp.gambo.ai/2ef432e1-3c1b-4326-86f9-8faf0b5d1867/images/speech_bubble_horizontal_right_fixed.png"
+      },
+      {
+        "type": "image",
+        "key": "speech_bubble_right_solid",
+        "url": "https://cdn-game-mcp.gambo.ai/3c0d778d-cc69-439e-8682-d74eca5e7f9e/images/speech_bubble_right_solid.png"
+      }
+    ]
+  },
+  "sound_effects": {
+    "files": [
+      {
+        "type": "audio",
+        "key": "button_click",
+        "url": "https://cdn-game-mcp.gambo.ai/c8d7a6fd-02ba-494f-ab98-c067286420fb/sound_effects/button_click.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "damage_sound",
+        "url": "https://cdn-game-mcp.gambo.ai/9e089303-d03e-491b-a47a-bfa1acbf286d/sound_effects/damage_sound.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "move_sound",
+        "url": "https://cdn-game-mcp.gambo.ai/335afafe-44b7-42b4-a600-8c28a478aae7/sound_effects/move_sound.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "game_clear",
+        "url": "https://cdn-game-mcp.gambo.ai/ae5bf180-0407-40b9-a0a1-b4868782c526/sound_effects/game_clear.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "game_over",
+        "url": "https://cdn-game-mcp.gambo.ai/d4395234-3272-4cd4-a3b3-2569af69aca5/sound_effects/game_over.mp3"
+      }
+    ]
+  },
+  "background_musics": {
+    "files": [
+      {
+        "type": "audio",
+        "key": "title_bgm",
+        "url": "https://cdn-game-mcp.gambo.ai/8b911405-cef6-4527-98c3-3fcf02fcea46/music/title_bgm.wav"
+      },
+      {
+        "type": "audio",
+        "key": "conversation_bgm",
+        "url": "https://cdn-game-mcp.gambo.ai/a819214e-a5b4-472c-945b-a51425d43798/music/conversation_bgm.wav"
+      },
+      {
+        "type": "audio",
+        "key": "game_bgm",
+        "url": "https://cdn-game-mcp.gambo.ai/b2cde9e3-b226-498b-a2a0-b956a3d36076/music/game_bgm.wav"
+      }
+    ]
+  },
+  "meta": {
+    "app": "Gambo AI",
+    "version": 1,
+    "showAllFilesInBlocks": false
+  }
+}
