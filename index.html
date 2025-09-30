@@ -1,41 +1,21 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    <link rel="manifest" href="manifest.json">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="theme-color" content="#000000" />
     <title>けろふぇん-理容室サバイバル-</title>
-    <script type="module" src="/src/main.js"></script>
-
-    <script
-      async
-      data-adbreak-test="on"
-      crossorigin="anonymous"
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-3086347538258327"
-    ></script>
-    <script>
-      window.adsbygoogle = window.adsbygoogle || []
-      var adBreak = (adConfig = function (o) {
-        adsbygoogle.push(o)
-      })
-      adConfig({ sound: "on", preloadAdBreaks: "on" })
-    </script>
 
     <style>
       * {
         -webkit-tap-highlight-color: transparent;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
         user-select: none;
       }
       
@@ -47,7 +27,6 @@
         height: 100%;
         overflow: hidden;
         position: fixed;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
       }
 
       body {
@@ -62,25 +41,6 @@
         touch-action: none;
       }
 
-      /* Disable text selection on mobile */
-      canvas, img {
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        -webkit-user-drag: none;
-        -khtml-user-drag: none;
-        -moz-user-drag: none;
-        -o-user-drag: none;
-        user-drag: none;
-      }
-
-      /* Prevent zoom on double tap */
-      * {
-        touch-action: manipulation;
-      }
-
-      /* Loading screen */
       #loading {
         position: fixed;
         top: 0;
@@ -111,26 +71,6 @@
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
       }
-
-      /* Portrait orientation lock styles */
-      @media screen and (orientation: landscape) and (max-height: 500px) {
-        .orientation-message {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(0, 0, 0, 0.9);
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          color: white;
-          font-size: 18px;
-          text-align: center;
-          z-index: 10000;
-        }
-      }
     </style>
   </head>
   <body>
@@ -138,12 +78,19 @@
       <div class="spinner"></div>
       <div>Loading...</div>
     </div>
+
+    <!-- Phaser Library -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
     
-    <div class="orientation-message" style="display: none;">
-      <div>📱</div>
-      <div>画面を縦向きにしてください</div>
-      <div>Please rotate your device to portrait mode</div>
-    </div>
+    <!-- Game Scripts -->
+    <script src="./src/scenes/Preloader.js"></script>
+    <script src="./src/scenes/TitleScene.js"></script>
+    <script src="./src/scenes/GameScene.js"></script>
+    <script src="./src/scenes/ConversationScene.js"></script>
+    <script src="./src/scenes/ResultScene.js"></script>
+    <script src="./src/LevelManager.js"></script>
+    <script src="./src/utils.js"></script>
+    <script src="./src/main.js"></script>
 
     <script>
       // Hide loading screen when game loads
@@ -160,38 +107,12 @@
         }, 1000);
       });
 
-      // Handle orientation change
-      function handleOrientation() {
-        const orientationMessage = document.querySelector('.orientation-message');
-        if (window.innerHeight < window.innerWidth && window.innerHeight < 500) {
-          // Landscape on small screen
-          if (orientationMessage) {
-            orientationMessage.style.display = 'flex';
-          }
-        } else {
-          // Portrait or large screen
-          if (orientationMessage) {
-            orientationMessage.style.display = 'none';
-          }
-        }
-      }
-
-      window.addEventListener('orientationchange', handleOrientation);
-      window.addEventListener('resize', handleOrientation);
-      handleOrientation(); // Initial check
-
       // Prevent context menu on mobile
       document.addEventListener('contextmenu', (e) => {
         e.preventDefault();
       });
 
-      // Prevent pull to refresh on mobile
-      document.addEventListener('touchmove', (e) => {
-        if (e.touches.length > 1) {
-          e.preventDefault();
-        }
-      }, { passive: false });
-
+      // Prevent double tap zoom
       let lastTouchEnd = 0;
       document.addEventListener('touchend', (e) => {
         const now = (new Date()).getTime();
